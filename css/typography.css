@@ -1,0 +1,475 @@
+/*typography*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 15px; 
+    line-height: 1.4;
+	color: #474747;
+	font-family: "pt-sans", Helvetica, Arial, Sans-serif;
+}
+
+a {
+	font-weight: normal;
+	color: #59a7d5;
+	text-decoration: none;
+	}
+a:link {
+	}
+a:visited {
+	}
+a:active {
+	}
+a:hover {
+	color: #75bae3; 
+}
+
+a:focus {
+
+}
+	
+table, thead, tbody, tr, th, td {font-size:1em}
+
+h1, h2 {
+	font-family: "myriad-pro", Helvetica, Arial, Sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h3, h4, h5. h6 {
+	/*font-family: "pt-sans", Helvetica, Arial, Sans-serif;*/
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 38px;
+	color: #32312f;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 28px;
+	color: #32312f;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 16px;
+	color: #32312f;
+	margin: 0;
+}
+
+h3 a {
+	color: #32312f;
+}
+
+h3 a:hover {
+	color: #59a7d5;
+}
+
+h4 {
+	font-size:14px;
+	padding: 7px 7px 0 7px;
+	margin: 0;
+	font-weight:bold;
+}
+
+h5, h6 {
+	font-size: 10px;
+	color: #858382;
+}
+
+p {
+	line-height: 1.6;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	font-size: 1em;
+	margin: 1em 0 1.5em 1em;
+}
+
+li > p {
+	margin-top: 0.2em;
+}
+
+#body ul {
+	list-style-type: circle;
+}
+
+.siteMap ul {
+	margin: 0 0 0 1.5em;
+	list-style-type: disc !important;
+}
+
+.siteMap ul li {
+	margin: .5em 0 0 0;
+	font-weight: bold;
+}
+
+.siteMap ul li ul li {
+	margin: 0;
+	font-weight: normal;
+}
+
+.siteMap ul li a {
+	font-weight: bold;
+}
+
+.siteMap ul li ul li a {
+	font-weight: normal;
+}
+
+pre {
+	font-family: monaco, courier, monospace;
+	}
+strong, b {
+	font-weight: bold;
+	}
+
+em {
+	font-style: italic;
+}
+
+#subhead p {
+	font-size: 16px;
+	color: #717171;
+	/*text-align: center;*/
+}
+
+#subhead h1 {
+	text-align: center;
+	line-height: 1;
+}
+
+.gold {
+	color: #a97021;
+}
+
+.heading h2 {
+	background: #fff;
+	font-size: 22px;
+	padding-right: 10px;
+	color: #666;
+	font-weight: 400;
+	display: inline-block;
+}
+
+.heading a {
+	color: #666;
+}
+
+.heading a:hover {
+	color: #59a7d5;
+}
+
+.heading h3 {
+	background: #fff;
+	padding-right: 10px;
+	color: #a97021;
+	font-size: 18px;
+	font-weight: normal;
+	display: inline-block;
+}
+
+.project h3 {
+	margin: 10px 0 5px 0;
+}
+
+.project h3 a {
+	font-weight: bold;
+}
+
+.project p {
+	color: #858382;
+	font-size: 13px;
+}
+
+.news h3 a {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.2;
+	margin: 0 0 10px 0;
+}
+
+.news h5 {
+	margin: 5px 0 10px 0;
+	font-size: 11px;
+}
+
+.news p {
+	font-size: 13px;
+	margin: 0 0 20px 0;
+}
+
+.quote h3 {
+	font-weight: bold;
+	/*margin: 30px 0 0;*/
+}
+
+
+#footer {
+	color: #ccc;
+}
+
+#footerBottom {
+	color: #858382;
+}
+
+#footer h3 {
+	color: #e28e36;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#footer .gold {
+	color: #e28e36;
+}
+
+#footer p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.footerForm {
+	width: 96.666666666666%;
+	height: 15px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #ccc;
+	border: none;
+	padding: 1.666666666667%;
+	margin: 0 0 10px 0;
+	font-family: "pt-sans", Helvetica, Arial, Sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.buttonForm {
+    border: 1px solid #434343;
+    background: #dc9d49;
+	/*line-height: 15px;
+	padding: 0 1.666666666667%;*/
+	font-family: "pt-sans", Helvetica, Arial, Sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	float: right;
+}
+
+.buttonForm:hover {
+	background: #ffa42a;
+	cursor: pointer;
+}
+
+.form_half1 {
+	width: 45%;
+	margin: 0 3.333333333334% 0 0;
+	float: left;
+}
+
+.form_half2 {
+	width: 45%;
+	margin: 0;
+	float: left;
+}
+
+.pageHeader h1, .pageHeader h2 {
+	color: #e28e36;
+}
+
+.pageHeader h1 a {
+	color: #e28e36;
+	font-weight: 600;
+}
+.pageHeader h1 a:hover {
+	color: #59a7d5;
+}
+
+.portfolioHeader h1, .portfolioHeader h2 {
+	margin: 5px 0 0;
+}
+
+.title {
+	color: #fff;
+	font-size: 90%;
+	font-weight: 400;
+}
+
+.pageHeader p {
+	font-size: 18px;
+	color: #f2f2f2;
+}
+
+.detail {
+	width: 93%;
+	margin: 20px auto;
+	line-height: 1.6;
+}
+
+.detail h2 {
+	text-align: center;
+	font-size: 21px;
+	margin: 5px 0;
+}
+
+.detail p {
+	margin: 0 0 18px;
+}
+
+.lgService {
+	font-size: 14px;
+}
+
+.lgService h2 {
+	font-size: 24px;
+	margin: 5px 0 0;
+}
+
+.lgService a {
+	color: #a97021;
+	font-weight: 700;
+}
+
+.lgService ul {
+	margin: 1em 0 1em 1em;
+}
+
+
+#sideBar h2, #sideBarC h2 {
+	font-weight: 400;
+	font-size: 24px;
+	color: #a97021;
+	margin: 10px 0 10px 0;
+}
+
+#sideBar p, #sideBarC p {
+	margin: 0 0 1em 0;
+}
+
+#main h1, #main h2, #mainC h1, #mainC h2 {
+	color: #a97021;
+	margin-top: 0;
+}
+
+#main h2 {
+	line-height: 1;
+}
+
+.top10 {
+	margin-top: 10px !important;
+}
+
+#main h2 a {
+	font-weight: 600;
+	color: #a97021;
+	line-height: 1;
+}
+
+#main h3 {
+	margin-bottom: 20px;
+}
+
+#main p, #mainC p {
+	margin: 0 0 20px 0;
+}
+
+.bN_item a {
+	font-family: "myriad-pro", Helvetica, Arial, Sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: #a97021;
+}
+
+.bN_item a:hover {
+	color: #e38c14;
+}
+
+a.btt, a.readmore {
+	color: #59a7d5;
+}
+
+a.btt:hover, a.readmore:hover {
+	color: #48bbff;
+}
+
+a.anchor {
+	color: #828282;
+}
+
+a.anchor:hover {
+	color: #59a7d5;
+}
+
+@media screen and (max-width: 950px) { 
+	h1 {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 800px) { 
+	
+	#subhead p, .pageHeader p {
+		font-size: 15px;
+	}
+	
+	.lgService h2 {
+		font-size: 21px;
+	}
+	
+	h2, #sideBar h2, #sideBarC h2 {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 620px) { 
+	#sideBar h2 {
+		text-align: center;
+	}
+	
+	body {
+	-webkit-text-size-adjust: none;
+	}
+}
+
+@media screen and (max-width: 500px) { 
+	h1 {
+		font-size: 21px;
+	}
+	
+	#subhead p, .pageHeader p, body   {
+		font-size: 13px;
+	}
+	
+	h2, #sideBar h2, #sideBarC h2 {
+		font-size: 18px;
+	}
+	
+	#main h3 {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	 
+}
+
+.leftFooter p, rightFooter p {
+	margin: 10px 0;
+}
+
+.required {
+	font-size: 14px;
+	color: #ccc;
+	font-weight: normal;
+	font-style: italic;
+}
+
