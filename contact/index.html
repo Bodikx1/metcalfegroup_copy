@@ -561,61 +561,62 @@
         </div>
     </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="../js/tinynav.min.js"></script>
-<script> // tinynav
-    $(function () {
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="../js/tinynav.min.js"></script>
+    <script> // tinynav
+        $(function () {
 
-      // TinyNav.js 1
-      $('#navTop').tinyNav({
-        active: 'current_page_item',
-        // label: 'Menu'
-		header: 'Navigation' // Writing any title with this option triggers the header
-      });
-      
-      // TinyNav.js 2
-      $('#navSub').tinyNav({
-		  active: 'current_page_item',
-        // header: 'Navigation' // Writing any title with this option triggers the header
-      });
-	  
-	  // TinyNav.js 3
-      $('#navSub2').tinyNav({
-        header: 'Select Post' // Writing any title with this option triggers the header
-      });
-	  
-	  // TinyNav.js 4
-      $('#navSub3').tinyNav({
-        header: 'Select Month' // Writing any title with this option triggers the header
-      });
+          // TinyNav.js 1
+          $('#navTop').tinyNav({
+            active: 'current_page_item',
+            // label: 'Menu'
+    		header: 'Navigation' // Writing any title with this option triggers the header
+          });
+          
+          // TinyNav.js 2
+          $('#navSub').tinyNav({
+    		  active: 'current_page_item',
+            // header: 'Navigation' // Writing any title with this option triggers the header
+          });
+    	  
+    	  // TinyNav.js 3
+          $('#navSub2').tinyNav({
+            header: 'Select Post' // Writing any title with this option triggers the header
+          });
+    	  
+    	  // TinyNav.js 4
+          $('#navSub3').tinyNav({
+            header: 'Select Month' // Writing any title with this option triggers the header
+          });
 
-    });
-	
-	
-  </script>
+        });
+    	
+    	
+    </script>
 
-<!-- Script for Form Clears -->
+    <!-- Script for Form Clears -->
 
-<script type="text/javascript">
-// remove default values
-jQuery(document).ready(function() {
+    <script type="text/javascript">
+        // remove default values
+        jQuery(document).ready(function() {
 
-	jQuery.fn.cleardefault = function() {
-	return this.focus(function() {
-		if( this.value == this.defaultValue ) {
-			this.value = "";
-		}
-	}).blur(function() {
-		if( !this.value.length ) {
-			this.value = this.defaultValue;
-		}
-	});
-};
-jQuery(".clearit input, .clearit textarea").cleardefault();
+        	jQuery.fn.cleardefault = function() {
+            	return this.focus(function() {
+            		if( this.value == this.defaultValue ) {
+            			this.value = "";
+            		}
+            	}).blur(function() {
+            		if( !this.value.length ) {
+            			this.value = this.defaultValue;
+            		}
+            	});
+            };
+            jQuery(".clearit input, .clearit textarea").cleardefault();
 
-});
+        });
 
-</script>
+    </script>
   
 
 </body>
