@@ -13,9 +13,9 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="../css/style.css" type="text/css"  />
-    <link rel='stylesheet' id='gforms_formsmain_css-css'  href='../css/formsmain.css%3Fver=1.8.22.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='gforms_ready_class_css-css'  href='../css/readyclass.css%3Fver=1.8.22.css' type='text/css' media='all' />
-    
+    <link rel='stylesheet' id='gforms_formsmain_css-css'  href='../css/formsmain.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_ready_class_css-css'  href='../css/readyclass.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="../css/bug-fix.css" />
     <meta name='description' content='We offer a variety of services, including research, product design, engineering, prototyping, testing, and more. Let us know how we can assist you!' />
     <meta name='keywords' content='full-service, research, product design and development, engineering, prototyping, testing' />
 </head>
@@ -131,11 +131,11 @@
                                     <label class='gfield_label' for='input_1_1_3'>Name<span class='gfield_required'>*</span></label>
                                     <div class='ginput_complex ginput_container'>
                                         <span id='input_1_1_3_container' class='ginput_left'>
-                                            <input type='text' id='input_1_1_3'/>
+                                            <input name="first_name" type='text' id='input_1_1_3'/>
                                             <label for='input_1_1_3'>First</label>
                                         </span>
                                         <span class='ginput_right'>
-                                            <input type='text' id='input_1_1_6'/>
+                                            <input name="last_name" type='text' id='input_1_1_6'/>
                                             <label for='input_1_1_6'>Last</label>
                                         </span>
                                     </div>
@@ -143,40 +143,40 @@
                                 <li>
                                     <label class='gfield_label' for='input_1_4'>Company<span class='gfield_required'>*</span></label>
                                     <div>
-                                        <input id='input_1_4' type='text' class='medium' />
+                                        <input name="company" id='input_1_4' type='text' class='medium' />
                                     </div>
                                 </li>
                                 <li>
                                     <label class='gfield_label' for='input_1_6'>Title</label>
                                     <div>
-                                        <input name='input_6' id='input_1_6' type='text' value='' class='medium'  tabindex='4'   />
+                                        <input name='title' id='input_1_6' type='text' value='' class='medium'  tabindex='4'   />
                                     </div>
                                 </li>
                                 <li>
                                     <label class='gfield_label' for='input_1_7_1'>Address</label>
                                     <div class='ginput_complex'>
                                         <span class='ginput_full'>
-                                            <input type='text'  id='input_1_7_1' />
+                                            <input name="street_address" type='text'  id='input_1_7_1' />
                                             <label for='input_1_7_1'>Street Address</label>
                                         </span>
                                         <span class='ginput_full' >
-                                            <input type='text' id='input_1_7_2'/>
+                                            <input name="address_line_2" type='text' id='input_1_7_2'/>
                                             <label for='input_1_7_2'>Address Line 2</label>
                                         </span>
                                         <span class='ginput_left'>
-                                            <input type='text' id='input_1_7_3'/>
+                                            <input name="city" type='text' id='input_1_7_3'/>
                                             <label for='input_1_7_3'>City</label>
                                         </span>
                                         <span class='ginput_right' >
-                                            <input type='text' id='input_1_7_4'/>
+                                            <input name="state" type='text' id='input_1_7_4'/>
                                             <label for='input_1_7_4'>State / Province / Region</label>
                                         </span>
                                         <span class='ginput_left'>
-                                            <input type='text' id='input_1_7_5'/>
+                                            <input name="zip" type='text' id='input_1_7_5'/>
                                             <label for='input_1_7_5'>ZIP / Postal Code</label>
                                         </span>
                                         <span class='ginput_right' >
-                                            <select id='input_1_7_6'>
+                                            <select name="country" id='input_1_7_6'>
                                                 <option value='' selected='selected'></option>
                                                 <option value='Afghanistan' >Afghanistan</option>
                                                 <option value='Albania' >Albania</option>
@@ -395,19 +395,19 @@
                                 <li>
                                     <label class='gfield_label' for='input_1_2'>Email<span class='gfield_required'>*</span></label>
                                     <div>
-                                        <input id='input_1_2' type='text' class='medium'/>
+                                        <input name="email" id='input_1_2' type='text' class='medium'/>
                                     </div>
                                 </li>
                                 <li>
                                     <label class='gfield_label' for='input_1_3'>Phone<span class='gfield_required'>*</span></label>
                                     <div>
-                                        <input id='input_1_3' type='text' class='medium' />
+                                        <input name="phone" id='input_1_3' type='text' class='medium' />
                                     </div>
                                 </li>
                                 <li>
                                     <label class='gfield_label' for='input_1_11'>Extension</label>
                                     <div>
-                                        <input id='input_1_11' type='text' class='small' />
+                                        <input name="extension" id='input_1_11' type='text' class='small' />
                                     </div>
                                 </li>
                                 <li>
@@ -416,31 +416,31 @@
                                     <div class='ginput_container'>
                                         <ul class='gfield_checkbox'>
                                             <li>
-                                                <input type='checkbox'  value='Research'  id='choice_1_8_1' />
+                                                <input name="research" type='checkbox'  value='Research'  id='choice_1_8_1' />
                                                 <label for='choice_1_8_1'>Research</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='Product Design'  id='choice_1_8_2' />
+                                                <input name="design" type='checkbox'  value='Product Design'  id='choice_1_8_2' />
                                                 <label for='choice_1_8_2'>Product Design</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='Engineering' id='choice_1_8_3'/>
+                                                <input name="engineering" type='checkbox'  value='Engineering' id='choice_1_8_3'/>
                                                 <label for='choice_1_8_3'>Engineering</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='Prototyping'  id='choice_1_8_4'/>
+                                                <input name="prototyping" type='checkbox'  value='Prototyping'  id='choice_1_8_4'/>
                                                 <label for='choice_1_8_4'>Prototyping</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='Testing'  id='choice_1_8_5'/>
+                                                <input name="testing" type='checkbox'  value='Testing'  id='choice_1_8_5'/>
                                                 <label for='choice_1_8_5'>Testing</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='Other'  id='choice_1_8_6'/>
+                                                <input name="other" type='checkbox'  value='Other'  id='choice_1_8_6'/>
                                                 <label for='choice_1_8_6'>Other</label>
                                             </li>
                                             <li>
-                                                <input type='checkbox'  value='General Inquiry'  id='choice_1_8_7'/>
+                                                <input name="general_inquiry" type='checkbox'  value='General Inquiry'  id='choice_1_8_7'/>
                                                 <label for='choice_1_8_7'>General Inquiry</label>
                                             </li>
                                         </ul>
@@ -449,13 +449,13 @@
                                 <li>
                                     <label class='gfield_label' for='input_1_9'>How did you hear of us?<span class='gfield_required'>*</span></label>
                                     <div>
-                                        <input id='input_1_9' type='text' class='medium' />
+                                        <input name="hear" id='input_1_9' type='text' class='medium' />
                                     </div>
                                 </li>
                                 <li>
                                     <label class='gfield_label' for='input_1_5'>Message<span class='gfield_required'>*</span></label>
                                     <div>
-                                        <textarea id='input_1_5' class='textarea medium' ></textarea>
+                                        <textarea name="message" id='input_1_5' class='textarea medium' ></textarea>
                                     </div>
                                 </li>
                                 <li>
@@ -463,7 +463,7 @@
                                     <div>
                                         <ul class='gfield_checkbox'>
                                             <li>
-                                                <input type='checkbox'  value='Receive TMG design news &amp; updates' checked='checked' id='choice_1_10_1'/>
+                                                <input name="receive" type='checkbox'  value='Receive TMG design news &amp; updates' checked='checked' id='choice_1_10_1'/>
                                                 <label for='choice_1_10_1'>Receive TMG design news & updates</label>
                                             </li>
                                         </ul>
@@ -616,6 +616,30 @@
 
         });
 
+    </script>
+
+    <script>
+        $('#mainC form').on('submit',function(e){ 
+            var form = $(this),
+                data = form.serialize();
+            $.ajax({ 
+               type: 'POST', 
+               url: '../forms/contact2.php', 
+               dataType: 'json', 
+               data: data, 
+               success: function (data) {
+
+               },
+               error: function (data) {
+               }    
+               });
+            form.find('input').each( function(){ 
+                $(this).val('')
+            });
+            
+            e.preventDefault();
+            return false; 
+        });
     </script>
   
 

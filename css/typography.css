@@ -29,8 +29,6 @@ a:hover {
 a:focus {
 
 }
-	
-table, thead, tbody, tr, th, td {font-size:1em}
 
 h1, h2 {
 	font-family: "myriad-pro", Helvetica, Arial, Sans-serif;
@@ -38,7 +36,7 @@ h1, h2 {
 	font-weight: 400;
 }
 
-h3, h4, h5. h6 {
+h3, h5. h6 {
 	/*font-family: "pt-sans", Helvetica, Arial, Sans-serif;*/
 	font-style: normal;
 	font-weight: 400;
@@ -71,14 +69,7 @@ h3 a:hover {
 	color: #59a7d5;
 }
 
-h4 {
-	font-size:14px;
-	padding: 7px 7px 0 7px;
-	margin: 0;
-	font-weight:bold;
-}
-
-h5, h6 {
+h5 {
 	font-size: 10px;
 	color: #858382;
 }
@@ -98,40 +89,9 @@ ol, ul {
 	margin: 1em 0 1.5em 1em;
 }
 
-li > p {
-	margin-top: 0.2em;
-}
-
 #body ul {
 	list-style-type: circle;
 }
-
-.siteMap ul {
-	margin: 0 0 0 1.5em;
-	list-style-type: disc !important;
-}
-
-.siteMap ul li {
-	margin: .5em 0 0 0;
-	font-weight: bold;
-}
-
-.siteMap ul li ul li {
-	margin: 0;
-	font-weight: normal;
-}
-
-.siteMap ul li a {
-	font-weight: bold;
-}
-
-.siteMap ul li ul li a {
-	font-weight: normal;
-}
-
-pre {
-	font-family: monaco, courier, monospace;
-	}
 strong, b {
 	font-weight: bold;
 	}
@@ -170,15 +130,6 @@ em {
 
 .heading a:hover {
 	color: #59a7d5;
-}
-
-.heading h3 {
-	background: #fff;
-	padding-right: 10px;
-	color: #a97021;
-	font-size: 18px;
-	font-weight: normal;
-	display: inline-block;
 }
 
 .project h3 {
@@ -231,59 +182,12 @@ em {
 	font-weight: bold;
 }
 
-#footer .gold {
-	color: #e28e36;
-}
-
 #footer p {
 	font-size: 14px;
 	line-height: 1.4;
 }
 
-.footerForm {
-	width: 96.666666666666%;
-	height: 15px;
-	background-color: rgba(0, 0, 0, 0.4);
-	color: #ccc;
-	border: none;
-	padding: 1.666666666667%;
-	margin: 0 0 10px 0;
-	font-family: "pt-sans", Helvetica, Arial, Sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 12px;
-}
-
-.buttonForm {
-    border: 1px solid #434343;
-    background: #dc9d49;
-	/*line-height: 15px;
-	padding: 0 1.666666666667%;*/
-	font-family: "pt-sans", Helvetica, Arial, Sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	float: right;
-}
-
-.buttonForm:hover {
-	background: #ffa42a;
-	cursor: pointer;
-}
-
-.form_half1 {
-	width: 45%;
-	margin: 0 3.333333333334% 0 0;
-	float: left;
-}
-
-.form_half2 {
-	width: 45%;
-	margin: 0;
-	float: left;
-}
-
-.pageHeader h1, .pageHeader h2 {
+.pageHeader h1 {
 	color: #e28e36;
 }
 
@@ -295,53 +199,10 @@ em {
 	color: #59a7d5;
 }
 
-.portfolioHeader h1, .portfolioHeader h2 {
-	margin: 5px 0 0;
-}
-
 .title {
 	color: #fff;
 	font-size: 90%;
 	font-weight: 400;
-}
-
-.pageHeader p {
-	font-size: 18px;
-	color: #f2f2f2;
-}
-
-.detail {
-	width: 93%;
-	margin: 20px auto;
-	line-height: 1.6;
-}
-
-.detail h2 {
-	text-align: center;
-	font-size: 21px;
-	margin: 5px 0;
-}
-
-.detail p {
-	margin: 0 0 18px;
-}
-
-.lgService {
-	font-size: 14px;
-}
-
-.lgService h2 {
-	font-size: 24px;
-	margin: 5px 0 0;
-}
-
-.lgService a {
-	color: #a97021;
-	font-weight: 700;
-}
-
-.lgService ul {
-	margin: 1em 0 1em 1em;
 }
 
 
@@ -352,31 +213,13 @@ em {
 	margin: 10px 0 10px 0;
 }
 
-#sideBar p, #sideBarC p {
+#sideBarC p {
 	margin: 0 0 1em 0;
 }
 
-#main h1, #main h2, #mainC h1, #mainC h2 {
+#main h1, #mainC h1, #mainC h2 {
 	color: #a97021;
 	margin-top: 0;
-}
-
-#main h2 {
-	line-height: 1;
-}
-
-.top10 {
-	margin-top: 10px !important;
-}
-
-#main h2 a {
-	font-weight: 600;
-	color: #a97021;
-	line-height: 1;
-}
-
-#main h3 {
-	margin-bottom: 20px;
 }
 
 #main p, #mainC p {
@@ -395,20 +238,12 @@ em {
 	color: #e38c14;
 }
 
-a.btt, a.readmore {
+a.btt {
 	color: #59a7d5;
 }
 
-a.btt:hover, a.readmore:hover {
+a.btt:hover {
 	color: #48bbff;
-}
-
-a.anchor {
-	color: #828282;
-}
-
-a.anchor:hover {
-	color: #59a7d5;
 }
 
 @media screen and (max-width: 950px) { 
@@ -419,12 +254,8 @@ a.anchor:hover {
 
 @media screen and (max-width: 800px) { 
 	
-	#subhead p, .pageHeader p {
+	#subhead p {
 		font-size: 15px;
-	}
-	
-	.lgService h2 {
-		font-size: 21px;
 	}
 	
 	h2, #sideBar h2, #sideBarC h2 {
@@ -447,22 +278,17 @@ a.anchor:hover {
 		font-size: 21px;
 	}
 	
-	#subhead p, .pageHeader p, body   {
+	#subhead p, body   {
 		font-size: 13px;
 	}
 	
 	h2, #sideBar h2, #sideBarC h2 {
 		font-size: 18px;
 	}
-	
-	#main h3 {
-		font-size: 14px;
-		margin-bottom: 0;
-	}
 	 
 }
 
-.leftFooter p, rightFooter p {
+.leftFooter p {
 	margin: 10px 0;
 }
 

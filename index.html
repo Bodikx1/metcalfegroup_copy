@@ -15,11 +15,12 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="css/style.css" type="text/css"  />
-    <link rel='stylesheet' id='wooslider-flexslider-css'  href='css/flexslider.css%3Fver=2.0.1.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='wooslider-common-css'  href='css/style.css%3Fver=2.0.1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wooslider-flexslider-css'  href='css/flexslider.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wooslider-common-css'  href='css/styles.css' type='text/css' media='all' />
     <link rel='stylesheet' id='woodojo-custom-code-css'  href='css/woodojo-custom-code.css' type='text/css' media='screen' />
-    <link rel='stylesheet' id='gforms_formsmain_css-css'  href='css/formsmain.css%3Fver=1.8.22.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='gforms_ready_class_css-css'  href='css/readyclass.css%3Fver=1.8.22.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_formsmain_css-css'  href='css/formsmain.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_ready_class_css-css'  href='css/readyclass.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="css/bug-fix.css" />
     <meta name='description' content='We are a product design and development firm that has a variety of in-house capabilities to visualize your product and turn it into reality.  ' />
     <meta name='keywords' content='full-service, research, product design and development, engineering, prototyping, testing, Solon, Cleveland, Ohio' />
 </head>
@@ -335,34 +336,34 @@
                             <ul class='gform_fields top_label'>
                                 <li class='gfield gf_left_half clearit' >
                                     <div class='ginput_container'>
-                                        <input name='input_1' type='text' value='Name *' class='medium' />
+                                        <input name='name' type='text' value='Name *' class='medium' />
                                     </div>
                                 </li>
                                 <li class='gfield gf_right_half clearit' >
                                     <div class='ginput_container'>
-                                        <textarea name='input_5' class='textarea medium'>Message *</textarea>
+                                        <textarea name='message' class='textarea medium'>Message *</textarea>
                                     </div>
                                 </li>
                                 <li class='gfield gf_left_half clearit' >
                                     <div class='ginput_container'>
-                                        <input name='input_2' type='text' value='Company' class='medium'/>
+                                        <input name='company' type='text' value='Company' class='medium'/>
                                     </div>
                                 </li>
                                 <li class='gfield gf_left_half clearit' >
                                     <div class='ginput_container'>
-                                        <input name='input_7' type='text' value='Phone *' class='medium' />
+                                        <input name='phone' type='text' value='Phone *' class='medium' />
                                     </div>
                                 </li>
                                 <li class='gfield gf_left_half clearit' >
                                     <div class='ginput_container'>
-                                        <input name='input_6' type='text' value='Email *' class='medium'/>
+                                        <input name='email' type='text' value='Email *' class='medium'/>
                                     </div>
                                 </li>
                                 <li class='gfield gf_inline clearit' >
                                     <div class='ginput_container'>
                                         <ul class='gfield_checkbox'>
                                             <li>
-                                                <input name='input_8.1' type='checkbox'  value='Receive TMG design news &amp; updates' checked='checked' id='choice_2_8_1' />
+                                                <input name='receive' type='checkbox'  value='Receive TMG design news &amp; updates' checked='checked' id='choice_2_8_1' />
                                                 <label for='choice_2_8_1' id='label_2_8_1'>Receive TMG design news & updates</label>
                                             </li>
                                         </ul>
@@ -453,6 +454,29 @@
         jQuery( '#wooslider-id-2' ).flexslider2({namespace: "wooslider-"
         , animation: "slide", useCSS: true, direction: "horizontal", slideshowSpeed: 7000, animationSpeed: 700, slideshow: true, video: true, directionNav: true, keyboard: false, mousewheel: false, pausePlay: false, animationLoop: true, pauseOnAction: true, pauseOnHover: true, smoothHeight: false, touch: true, controlNav: true, start: function(slider){var wooslider_holder = jQuery(slider).find("li.slide"); if(0 !== wooslider_holder.length){ var wooslides = ([]).concat(wooslider_holder.splice(0,2), wooslider_holder.splice(-2,2), jQuery.makeArray(wooslider_holder)); jQuery.each(wooslides, function(i,el){ var content = jQuery(this).attr("data-wooslidercontent"); if(typeof content == "undefined" || false == content) return; jQuery(this).append(content).removeAttr("data-wooslidercontent"); }); } jQuery(slider).fitVids(); var maxHeight = 0; jQuery(slider).find(".wooslider-control-nav li").each(function(i,el) { maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height(); }); jQuery(slider).css("margin-bottom", maxHeight + 20 + "px");}, before: function(slider){}, after: function(slider){}, end: function(slider){}, added: function(slider){}, removed: function(slider){}});
 
+        });
+    </script>
+    <script>
+        $('#footer form').on('submit',function(e){ 
+            var form = $(this),
+                data = form.serialize();
+            $.ajax({ 
+               type: 'POST', 
+               url: 'forms/contact.php', 
+               dataType: 'json', 
+               data: data, 
+               success: function (data) {
+
+               },
+               error: function (data) {
+               }    
+               });
+            form.find('input').each( function(){ 
+                $(this).val('')
+            });
+            
+            e.preventDefault();
+            return false; 
         });
     </script>
     
