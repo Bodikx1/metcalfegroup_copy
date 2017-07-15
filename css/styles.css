@@ -1,0 +1,29 @@
+/* Basic reset for better theme compatibility. */
+.wooslider { clear: both; overflow: visible !important; }
+.wooslider .slides > li { list-style: none; float: left; width: 100%; margin: 0; padding: 0; }
+.wooslider .slides > li img { border: 0; box-shadow: none; margin: 0; height: auto; -moz-backface-visibility: hidden; }
+.wooslider .wooslider-control-nav > li { margin: 0 6px; padding: 0; }
+body .wooslider ul.slides { overflow: hidden; }
+body .wooslider ul.slides, body .wooslider .wooslider-control-nav, body .wooslider .wooslider-direction-nav { padding: 0; margin: 0; }
+body .wooslider .wooslider-control-nav { position: absolute; top: 100%; margin-top: 15px; }
+body .wooslider .wooslider-control-nav li, body .wooslider .wooslider-direction-nav li { list-style: none; }
+
+/* Layout styles for the "Posts" slideshow type. */
+@media only screen and (min-width: 768px) {
+	/* Text Left and Text Right Options */
+
+	/* Full overlay enabled */
+
+	/* Natural overlay enabled */
+}
+
+/* "Slides" slideshow type */
+body .wooslider .slide-content { margin: 0.5em; padding: 0; border: 0; width: auto; height: auto; }
+
+/* Slide widget */
+body .wooslider-control-nav { margin: 0; padding: 0; z-index: 1; }
+body .wooslider-direction-nav a { height: auto; line-height: 40px; text-indent: -9999px; }
+body .wooslider-direction-nav a:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-indent: 0; text-align: center; }
+body .wooslider-direction-nav, body .wooslider-direction-nav li { list-style: none; margin: 0; padding: 0; }
+body .wooslider-direction-nav .wooslider-next { text-align: inherit; }
+body .wooslider.wooslider-type-slides img { max-width: 100%; padding: 0;}
