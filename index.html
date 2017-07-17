@@ -39,50 +39,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Services</a>
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0);">Research</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Product Design</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Engineering</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Prototyping</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Testing</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Additional Support</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
                             <a href="about-us/company/index.html">About Us</a>
-                            <ul>
-                                <li>
-                                    <a href="about-us/company/index.html">Company</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Facility</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Process</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Clients</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Testimonials</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="contact/index.html">Contact</a>
@@ -93,7 +50,7 @@
         </div>
         <div class="clearall"></div>
     </div>
-    <div id="slider">
+    <!-- <div id="slider">
         <div id="homeSlider">
             <div id="wooslider-id-1" class="wooslider wooslider-id-1 wooslider-type-slides wooslider-theme-default">
                 <ul class="slides">
@@ -135,7 +92,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="body">
         <div id="subhead">
             <h1>Looking Ahead. Going Beyond. <span class="gold">Making It Real.</span><span style="color: #9d9d9d;"><span style="font-weight: 300;">™</span></span></h1>
@@ -146,12 +103,11 @@
                 <h2><a href="javascript:void(0);">Services</a></h2>
             </div>
             <div class="services">
-                <a href="javascript:void(0);" class="service research">Research</a>
-                <a href="javascript:void(0);" class="service design">Product Design</a>
-                <a href="javascript:void(0);" class="service engineer">Engineering</a>
-                <a href="javascript:void(0);" class="service proto">Prototyping</a>
-                <a href="javascript:void(0);" class="service test">Testing</a>
-                <a href="javascript:void(0);" class="service support last">Additional Support</a>
+                <a href="javascript:void(0);" class="service research">Entertainers Homeowners</a>
+                <a href="javascript:void(0);" class="service design">Military</a>
+                <a href="javascript:void(0);" class="service engineer">Outdoorsmen</a>
+                <a href="javascript:void(0);" class="service proto">Students</a>
+                <a href="javascript:void(0);" class="service test">Technologists</a>
                 <div class="clearall"></div>
             </div>
         </div>
@@ -190,7 +146,7 @@
             <div class="clearall"></div>
         </div> <!-- End Projects -->
         <!-- Testimonial -->
-        <div class="section_half">
+        <!-- <div class="section_half">
             <div class="heading">
                 <h2><a href="javascript:void(0);">Testimonials</a></h2>
             </div>
@@ -299,10 +255,10 @@
                     </ul>
                 </div>
             </div>
-        </div> 
+        </div>  -->
         <!-- End Testimonial -->
         <!-- News -->
-        <div class="section_half news">
+        <!-- <div class="section_half news">
             <div class="heading">
                 <h2><a href="javascript:void(0);">Latest News</a></h2>
             </div>
@@ -314,7 +270,7 @@
                 <h5>May 01, 2016</h5> 
                 <p>We are no stranger to the cutting edge of innovation and far-forward/fast-forward visionary thinking. Our world-class design and engineering capability [Read More&#8230;]</p>
             </div>
-        </div> 
+        </div>  -->
         <!-- End News -->
         <div class="clearall"></div>
     </div> 
@@ -445,14 +401,14 @@
 
     <script type="text/javascript">
         jQuery(window).load(function() {
-        jQuery( '#wooslider-id-1' ).fitVids();
+        // jQuery( '#wooslider-id-1' ).fitVids();
 
-        jQuery( '#wooslider-id-1' ).flexslider2({namespace: "wooslider-"
-        , animation: "slide", useCSS: true, direction: "horizontal", slideshowSpeed: 7000, animationSpeed: 700, slideshow: true, video: true, directionNav: true, keyboard: false, mousewheel: false, pausePlay: false, animationLoop: true, pauseOnAction: true, pauseOnHover: true, smoothHeight: false, touch: true, controlNav: true, start: function(slider){var wooslider_holder = jQuery(slider).find("li.slide"); if(0 !== wooslider_holder.length){ var wooslides = ([]).concat(wooslider_holder.splice(0,2), wooslider_holder.splice(-2,2), jQuery.makeArray(wooslider_holder)); jQuery.each(wooslides, function(i,el){ var content = jQuery(this).attr("data-wooslidercontent"); if(typeof content == "undefined" || false == content) return; jQuery(this).append(content).removeAttr("data-wooslidercontent"); }); } jQuery(slider).fitVids(); var maxHeight = 0; jQuery(slider).find(".wooslider-control-nav li").each(function(i,el) { maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height(); }); jQuery(slider).css("margin-bottom", maxHeight + 20 + "px");}, before: function(slider){}, after: function(slider){}, end: function(slider){}, added: function(slider){}, removed: function(slider){}});
-        jQuery( '#wooslider-id-2' ).fitVids();
+        // jQuery( '#wooslider-id-1' ).flexslider2({namespace: "wooslider-"
+        // , animation: "slide", useCSS: true, direction: "horizontal", slideshowSpeed: 7000, animationSpeed: 700, slideshow: true, video: true, directionNav: true, keyboard: false, mousewheel: false, pausePlay: false, animationLoop: true, pauseOnAction: true, pauseOnHover: true, smoothHeight: false, touch: true, controlNav: true, start: function(slider){var wooslider_holder = jQuery(slider).find("li.slide"); if(0 !== wooslider_holder.length){ var wooslides = ([]).concat(wooslider_holder.splice(0,2), wooslider_holder.splice(-2,2), jQuery.makeArray(wooslider_holder)); jQuery.each(wooslides, function(i,el){ var content = jQuery(this).attr("data-wooslidercontent"); if(typeof content == "undefined" || false == content) return; jQuery(this).append(content).removeAttr("data-wooslidercontent"); }); } jQuery(slider).fitVids(); var maxHeight = 0; jQuery(slider).find(".wooslider-control-nav li").each(function(i,el) { maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height(); }); jQuery(slider).css("margin-bottom", maxHeight + 20 + "px");}, before: function(slider){}, after: function(slider){}, end: function(slider){}, added: function(slider){}, removed: function(slider){}});
+        // jQuery( '#wooslider-id-2' ).fitVids();
 
-        jQuery( '#wooslider-id-2' ).flexslider2({namespace: "wooslider-"
-        , animation: "slide", useCSS: true, direction: "horizontal", slideshowSpeed: 7000, animationSpeed: 700, slideshow: true, video: true, directionNav: true, keyboard: false, mousewheel: false, pausePlay: false, animationLoop: true, pauseOnAction: true, pauseOnHover: true, smoothHeight: false, touch: true, controlNav: true, start: function(slider){var wooslider_holder = jQuery(slider).find("li.slide"); if(0 !== wooslider_holder.length){ var wooslides = ([]).concat(wooslider_holder.splice(0,2), wooslider_holder.splice(-2,2), jQuery.makeArray(wooslider_holder)); jQuery.each(wooslides, function(i,el){ var content = jQuery(this).attr("data-wooslidercontent"); if(typeof content == "undefined" || false == content) return; jQuery(this).append(content).removeAttr("data-wooslidercontent"); }); } jQuery(slider).fitVids(); var maxHeight = 0; jQuery(slider).find(".wooslider-control-nav li").each(function(i,el) { maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height(); }); jQuery(slider).css("margin-bottom", maxHeight + 20 + "px");}, before: function(slider){}, after: function(slider){}, end: function(slider){}, added: function(slider){}, removed: function(slider){}});
+        // jQuery( '#wooslider-id-2' ).flexslider2({namespace: "wooslider-"
+        // , animation: "slide", useCSS: true, direction: "horizontal", slideshowSpeed: 7000, animationSpeed: 700, slideshow: true, video: true, directionNav: true, keyboard: false, mousewheel: false, pausePlay: false, animationLoop: true, pauseOnAction: true, pauseOnHover: true, smoothHeight: false, touch: true, controlNav: true, start: function(slider){var wooslider_holder = jQuery(slider).find("li.slide"); if(0 !== wooslider_holder.length){ var wooslides = ([]).concat(wooslider_holder.splice(0,2), wooslider_holder.splice(-2,2), jQuery.makeArray(wooslider_holder)); jQuery.each(wooslides, function(i,el){ var content = jQuery(this).attr("data-wooslidercontent"); if(typeof content == "undefined" || false == content) return; jQuery(this).append(content).removeAttr("data-wooslidercontent"); }); } jQuery(slider).fitVids(); var maxHeight = 0; jQuery(slider).find(".wooslider-control-nav li").each(function(i,el) { maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height(); }); jQuery(slider).css("margin-bottom", maxHeight + 20 + "px");}, before: function(slider){}, after: function(slider){}, end: function(slider){}, added: function(slider){}, removed: function(slider){}});
 
         });
     </script>

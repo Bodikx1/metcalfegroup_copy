@@ -145,9 +145,11 @@ html,body {
 }
 
 a.service {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	float: left;
-	margin: 0 20px 0 0;
-	width: 140px;
+	width: 20%;
 	height: 30px;
 	padding: 110px 0 0 0;
 	display: block;
@@ -155,31 +157,50 @@ a.service {
 	font-size: 16px;
 	font-weight: bold;
 	color: #32312f;
-	background-position: 0 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 105px;
+	     -o-background-size: 105px;
+	        background-size: 105px;
 }
 
-a.support {
-	background: url(../images/services_support.png);
-	margin: 0;
+a.research {
+	background-position: calc(50% + 20px) top;
 }
+
 a.engineer {
-	background: url(../images/services_engineering.png);
+	background-image: url(../images/outdorsmen.png);
 }
 a.research {
-	background: url(../images/services_research.png);
+	background-image: url(../images/homeowners.png);
 }
 a.design {
-	background: url(../images/services_design.png);
+	background-image: url(../images/military.png);
 }
 a.proto {
-	background: url(../images/services_prototyping.png);
+	background-image: url(../images/students.png);
 }
 a.test {
-	background: url(../images/services_testing.png);
+	background-image: url(../images/technologist.png);
+}
+
+a.engineer:hover {
+	background-image: url(../images/outdorsmen-hover.png);
+}
+a.research:hover {
+	background-image: url(../images/homeowners-hover.png);
+}
+a.design:hover {
+	background-image: url(../images/military-hover.png);
+}
+a.proto:hover {
+	background-image: url(../images/students-hover.png);
+}
+a.test:hover {
+	background-image: url(../images/technologist-hover.png);
 }
 
 a.service:hover {
-	background-position: 0 -140px;
 	color: #59a7d5;
 }
 /*
@@ -194,36 +215,48 @@ a.service:hover {
 @media screen and (max-width: 980px) { 
 
 	a.service {
-		margin: 0 45px 10px;;
+		width: 33%;
+		margin: 0 0 40px;;
 	}
+
+	a.proto {
+		margin-left: 120px;	
+	}
+
+	a.test {
+		margin-left: 130px;	
+	}
+
 	.services {
 		width: 760px;
 		margin: 0 auto;
 	}
 }
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 785px) { 
 
 	a.service {
-		margin: 10px 0;
+		width: 50%;
 	}
+
+	a.proto {
+		margin-left: 0;	
+	}
+
 	.services {
 		width: 480px;
 		margin: 0 auto;
 	}
 }
 
-@media screen and (max-width: 500px) { 
-
+@media screen and (max-width: 515px) { 
 	a.service {
-		margin: 5px 0;
+		width: 100%;
 	}
-	.services {
-		width: 450px;
-	}
-}
 
-@media screen and (max-width: 460px) { 
+	a.test {
+		margin-left: 0;	
+	}
 
 	.services {
 		width: 300px;
@@ -363,6 +396,9 @@ a.service:hover {
 	float: left;
 	padding: 5px 0 5px 25px;
 	font-size: 14px;
+}
+
+#nav ul li + li {
 	border-left: #d4d4d4 1px solid;
 	margin-left: 25px;
 }
@@ -526,6 +562,23 @@ a.service:hover {
 	width: 74.468085106383%; /* 190px / 940px */
 	margin: 0;
 	float: right;
+}
+
+#mainC {
+	width: 100%;
+}
+
+#mainC .gform_wrapper {
+	max-width: 100%;
+}
+
+#mainC .gform_wrapper .ginput_complex .ginput_right input[type=text], 
+#mainC .gform_wrapper .ginput_complex .ginput_right select,
+#mainC .gform_wrapper .ginput_complex .ginput_full input[type=text] {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100% !important;
 }
 
 #bottomNav {
